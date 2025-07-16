@@ -209,7 +209,9 @@ nav ul li a:hover {
 		opacity: 1;
 	}
 }
-
+.tab_content {
+	padding-bottom: 60px;
+}
 .tab_content h3 {
 	font-weight: 400;
 	font-size: 32px;
