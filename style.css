@@ -1,0 +1,264 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.navbar-top {
+	border-bottom: 1px solid #eeeff0;
+}
+.time {
+	padding: 13px 0 11px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.time-items {
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
+}
+.time-days {
+	font-weight: 500;
+	font-size: 14px;
+	padding-right: 15px;
+	border-right: 2px solid #eeeff0;
+}
+.time-sun {
+	font-size: 14px;
+	font-weight: 500;
+	color: #211f2e;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+#selectId {
+	border: none;
+	font-weight: 500;
+	font-size: 16px;
+	color: #211f2e;
+	width: 55px;
+}
+.search-input {
+	color: #919099;
+	padding: 8px 10px;
+	border-radius: 6px;
+	border: 0.5px solid #e5e8ea;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0 20px;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+}
+nav ul li a {
+	font-size: 16px;
+	font-weight: 500;
+	color: #211f2e;
+}
+nav ul li a:hover {
+	color: #ff9a50;
+	font-weight: 700;
+}
+.nav-logo {
+	font-size: 32px;
+	font-weight: 700;
+	color: #211f2e;
+}
+.nav-btn {
+	font-size: 14px;
+	font-weight: 500;
+	color: #919099;
+	border-radius: 8px;
+	padding: 10px 24px;
+	border: 1px solid #919099;
+	cursor: pointer;
+}
+.loader-wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	background-color: #000;
+}
+#main {
+	background-color: #e5e8ea;
+}
+#main-content .title {
+	text-align: center;
+	padding-top: 10rem;
+}
+#main-content .title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: #000000;
+}
+#main-content .title p {
+	font-size: 16px;
+	font-weight: 500;
+	color: #919099;
+	padding-top: 16px;
+	padding-bottom: 32px;
+}
+#main-content .title input {
+	padding: 8px 12px;
+	border-radius: 6px;
+	color: #919099;
+	border: 0.5px solid #e5e8ea;
+	width: 504px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 10.6rem;
+}
+.archive-select select {
+	padding: 10px 12px;
+	width: 169px;
+	border-radius: 8px;
+	border: 1px solid #919099;
+	font-size: 14px;
+	font-weight: 500;
+	color: #919099;
+	margin-bottom: 16px;
+}
+
+.tabheader__items {
+	display: flex;
+	justify-content: space-between;
+	gap: 120px;
+	margin-bottom: 24px;
+	border-radius: 5px;
+	padding: 24px;
+}
+
+.tabheader__items .tabheader__item {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	gap: 56px;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+}
+.tabheader__items .tabheader__item p {
+	display: flex;
+	justify-content: space-between;
+	gap: 56px;
+}
+
+.tabheader__items .tabheader__item.tabheader__item_active {
+	color: #ff9a50;
+	font-weight: 600;
+	font-size: 30px;
+	border-top: 1px solid #ff9a50;
+}
+.show {
+	display: flex !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.tab_content h3 {
+	font-weight: 400;
+	font-size: 32px;
+	color: #211f2e;
+	margin-bottom: 32px;
+}
+.tab_content ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 19px 28px;
+}
+.tab_content ul li h4 {
+	color: #ff9a50;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 12px 0 6px 12px;
+}
+.tab_content ul li p {
+	color: #211f2e;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 12px 0 12px 12px;
+	height: 40px;
+	margin-bottom: 12px;
+}
+
+.tab_content ul li span {
+	color: #919099;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 12px 0 12px 12px;
+	line-height: 150%;
+}
+.loader {
+	width: 48px;
+	height: 48px;
+	border: 5px solid #fff;
+	border-bottom-color: #ff3d00;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
