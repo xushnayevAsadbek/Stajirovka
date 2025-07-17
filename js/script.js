@@ -34,9 +34,13 @@ window.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 	})
+
 	// Loader
+
 	const loaderWrapper = document.querySelector('.loader-wrapper')
 	setTimeout(() => {
 		loaderWrapper.style.display = 'none'
 	}, 1000)
+
+	// Modal
 })
