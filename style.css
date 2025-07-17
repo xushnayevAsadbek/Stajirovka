@@ -163,8 +163,9 @@ nav ul li a:hover {
 	justify-content: space-between;
 	gap: 120px;
 	margin-bottom: 24px;
-	border-radius: 5px;
 	padding: 24px;
+	color: rgba(0, 0, 0, 0.4);
+	opacity: 1;
 }
 
 .tabheader__items .tabheader__item {
@@ -183,7 +184,7 @@ nav ul li a:hover {
 }
 
 .tabheader__items .tabheader__item.tabheader__item_active {
-	color: #ff9a50;
+	color: rgba(255, 154, 80, 1);
 	font-weight: 600;
 	font-size: 30px;
 	border-top: 1px solid #ff9a50;
@@ -311,8 +312,7 @@ nav ul li a:hover {
 	justify-content: space-between;
 	padding: 16px 0 17px 0;
 }
-.footer-bottom p,
-span {
+.footer-copyright {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 130%;
